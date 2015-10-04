@@ -19,6 +19,7 @@ class HelloWorld
       'Hello World',
       "PID - #{Process.pid}",
       "Sleep time - #{@params['sleep'].to_i}",
+      "ENV - #{ENV['APP_ENV'] || '?'}",
     ].join("\n")
   end
 
