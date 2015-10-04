@@ -16,7 +16,7 @@ class HelloWorld
 
   def body
     [
-      'Hello World',
+      'Hello World ✌(◕‿-)✌',
       "HOST - #{IPSocket.getaddress(Socket.gethostname)}",
       "ProcessID - #{Process.pid}",
       "Sleep time - #{@params['sleep'].to_i}",
