@@ -17,9 +17,10 @@ class HelloWorld
   def body
     [
       'Hello World',
-      "PID - #{Process.pid}",
+      "HOST - #{IPSocket.getaddress(Socket.gethostname)}",
+      "ProcessID - #{Process.pid}",
       "Sleep time - #{@params['sleep'].to_i}",
-      "ENV - #{ENV['APP_ENV'] || '?'}",
+      "ENV - #{ENV['RACK_ENV']}",
     ].join("\n")
   end
 
